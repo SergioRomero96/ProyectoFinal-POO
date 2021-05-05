@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ar.edu.unju.fi.proyectofinal.vista.usuario.UsuarioActivity">
+
+    <LinearLayout
+
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Listado de Usuarios"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/idBtnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:drawableStart="@drawable/ic_agregarusuario"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Agregar Usuario"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Buscar: "
+                android:background="#dedebf"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:background="#fff"
+                android:id="@+id/idTxtBusquedaUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:maxLength="8"
+                android:hint="Numero de Dni"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/idBtnBuscarUsuario"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:drawableStart="@drawable/ic_busqueda" />
+        </LinearLayout>
+
+            <ListView
+                android:background="#fff"
+                android:id="@+id/idListUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

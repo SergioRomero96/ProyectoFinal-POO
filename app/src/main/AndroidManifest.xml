@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ar.edu.unju.fi.proyectofinal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".vista.LoginActivity"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".vista.MenuAdministrador">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".vista.MenuAdmin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".vista.MenuVendedor"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vista.pedido.AgregarPedidoActivity"
+
+            android:parentActivityName=".vista.MenuAdministrador"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vista.cliente.ClienteActivity"
+            android:parentActivityName=".vista.MenuAdministrador"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vista.producto.ProductoActivity"
+            android:parentActivityName=".vista.MenuAdministrador"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vista.usuario.UsuarioActivity"
+            android:parentActivityName=".vista.MenuAdministrador"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".vista.AcercaDeActivity"
+            android:label="@string/acerca_de"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".vista.usuario.AgregarUsuarioActivity"
+            android:parentActivityName=".vista.usuario.UsuarioActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".vista.usuario.ModificarUsuarioActivity"
+            android:parentActivityName=".vista.usuario.UsuarioActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".vista.producto.AgregarProductoActivity"
+            android:parentActivityName=".vista.producto.ProductoActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".vista.producto.ModificarProductoActivity"
+            android:parentActivityName=".vista.producto.ProductoActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".vista.cliente.AgregarClienteActivity"
+            android:parentActivityName=".vista.cliente.ClienteActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".vista.cliente.ModificarClienteActivity"
+            android:parentActivityName=".vista.cliente.ClienteActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".vista.pedido.DetallePedidoActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".vista.MenuVendedor"/>
+        <activity android:name=".vista.pedido.PedidoActivity"
+            android:parentActivityName=".vista.MenuAdministrador"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".vista.pedido.ConsultaPedidoActivity"
+            android:parentActivityName=".vista.pedido.PedidoActivity"
+            android:windowSoftInputMode="stateHidden"/>
+
+    </application>
+
+</manifest>

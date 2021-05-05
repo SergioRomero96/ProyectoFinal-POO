@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.MenuAdmin">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <TableLayout
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="70dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TableRow
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/idBotUsuario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/background_login"
+                            android:drawableTop="@drawable/usuario"
+
+                            android:padding="5dp"
+                            android:text="USUARIOS"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <Button
+
+                            android:id="@+id/idBotCliente"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:background="@drawable/background_login"
+                            android:drawableTop="@drawable/cliente1"
+
+                            android:padding="5dp"
+                            android:text="CLIENTES"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="50dp">
+
+                        <Button
+                            android:id="@+id/idBotPedido"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/background_login"
+                            android:drawableTop="@drawable/pedido"
+
+                            android:padding="5dp"
+                            android:text="PEDIDOS"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <Button
+
+                            android:id="@+id/idBotProducto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:background="@drawable/background_login"
+                            android:drawableTop="@drawable/producto"
+
+                            android:padding="5dp"
+                            android:text="PRODUCTOS"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        app:headerLayout="@layout/header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:menu="@menu/activity_menu_administrador2_drawer"
+        android:layout_gravity="start"
+
+
+        ></android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

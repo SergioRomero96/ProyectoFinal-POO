@@ -1,0 +1,86 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".vista.producto.ProductoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Listado de Productos"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/idBtnAddProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_agregar"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:text="Agregar Producto" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#dedebf"
+                android:padding="10dp"
+                android:text="Buscar: "
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/idTxtBusquedaProducto"
+                android:background="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nombre "
+                android:maxLength="20"
+                android:digits="abcdefghijklmnñopqrstuvwxyz
+                                ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:imeOptions="actionDone"
+                android:singleLine="true"/>
+            <Button
+                android:id="@+id/idBtnBuscarProducto"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:drawableStart="@drawable/ic_busqueda"/>
+        </LinearLayout>
+
+        <ListView
+            android:background="#fff"
+            android:id="@+id/idListProducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

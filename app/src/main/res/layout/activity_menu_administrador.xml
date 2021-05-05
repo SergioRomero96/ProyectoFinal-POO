@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context="ar.edu.unju.fi.proyectofinal.vista.MenuAdministrador">
+
+
+    <TextView
+        android:gravity="right"
+        android:id="@+id/lblUsuarioSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/bienvenido"
+        android:drawableRight="@drawable/ic_user"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:paddingTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/idUsuario"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/background_login"
+                android:drawableTop="@drawable/usuario"
+                android:onClick="llamarUsuario"
+                android:text="USUARIO"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:id="@+id/idCliente"
+                android:layout_marginLeft="40dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_login"
+                android:drawableTop="@drawable/cliente1"
+                android:onClick="llamarCliente"
+                android:text="@string/cliente"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="80dp">
+
+            <Button
+                android:id="@+id/idPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/background_login"
+                android:onClick="llamarPedido"
+                android:text="@string/pedido"
+                android:drawableTop="@drawable/pedido"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:id="@+id/idProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:padding="5dp"
+                android:background="@drawable/background_login"
+                android:onClick="llamarProducto"
+                android:text="@string/producto"
+                android:drawableTop="@drawable/producto"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</LinearLayout>

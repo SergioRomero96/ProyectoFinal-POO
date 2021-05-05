@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/gradient"
+    tools:context="ar.edu.unju.fi.proyectofinal.vista.pedido.PedidoActivity">
+    <ScrollView
+        android:id="@+id/idScrollViewEditPedido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Listado de Pedido"
+                android:layout_marginBottom="10dp"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        <LinearLayout
+            android:id="@+id/idLayoutBusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Buscar: "
+                android:background="#dedebf"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/idSpnPedVendedor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"/>
+            <Button
+                android:id="@+id/idBtnFindPedido"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:drawableStart="@drawable/ic_busqueda"/>
+
+        </LinearLayout>
+            <ListView
+                android:background="#fff"
+                android:id="@+id/idLvItemPedidoVendedor"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="10dp">
+
+            </ListView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#f5f5f5"
+                android:layout_marginBottom="10dp"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:padding="10dp"
+                    android:background="#e4e2e2"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:id="@+id/idTxtTotalListPedido"
+                    android:background="#f5f5f5"
+                    android:padding="10dp"
+                    android:layout_width="120dp"
+                    android:editable="false"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

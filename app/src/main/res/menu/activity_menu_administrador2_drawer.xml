@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/inicio"
+            android:icon="@drawable/inicio"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/idNavUsuario"
+            android:icon="@drawable/usuario"
+            android:title="Usuarios" />
+        <item
+            android:id="@+id/idNavCliente"
+            android:icon="@drawable/cliente1"
+            android:title="Clientes" />
+        <item
+            android:id="@+id/idNavProducto"
+            android:icon="@drawable/producto"
+            android:title="Productos" />
+        <item
+            android:id="@+id/idNavPedido"
+            android:icon="@drawable/pedido"
+            android:title="Pedidos" />
+    </group>
+
+    <item android:title="Ajustes">
+        <menu>
+            <item
+                android:id="@+id/idNavPerfil"
+                android:icon="@drawable/ic_perfil"
+                android:title="Editar Perfil " />
+            <item
+                android:id="@+id/idNavCerca"
+                android:icon="@drawable/ic_about"
+                android:title="Acerca de " />
+            <item
+                android:id="@+id/idNavSalir"
+                android:icon="@drawable/ic_salir"
+                android:title="Cerrar sesion" />
+        </menu>
+    </item>
+
+</menu>

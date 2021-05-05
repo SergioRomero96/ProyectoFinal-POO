@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estado">
+        <item>Disponible</item>
+        <item>No Disponible</item>
+    </string-array>
+    <string-array name="tipoUsuario">
+        <item>Administrador</item>
+        <item>Vendedor</item>
+    </string-array>
+    <string-array name="clienteVendedor">
+        <item>Todos</item>
+    </string-array>
+</resources>

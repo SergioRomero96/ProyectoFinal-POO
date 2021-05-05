@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context="ar.edu.unju.fi.proyectofinal.vista.pedido.AgregarPedidoActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar Pedido"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:background="#dedebf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Fecha: "
+                    android:padding="10dp"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:background="#f5f5f5"
+                    android:padding="10dp"
+                    android:id="@+id/idTxtFechaPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:editable="false"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5f5f5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#dedebf"
+                    android:textColor="#000"
+                    android:text="Cliente: "
+                    android:padding="10dp"
+                    android:textSize="18sp"/>
+                <Spinner
+                    android:id="@+id/idSpClientePedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="#f5f5f5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#dedebf"
+                    android:textColor="#000"
+                    android:text="Producto: "
+                    android:padding="10dp"
+                    android:textSize="18dp"/>
+                <Spinner
+                    android:id="@+id/idSpProductoPedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#dedebf"
+                    android:textColor="#000"
+                    android:text="Unidades: "
+                    android:padding="10dp"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:background="#f5f5f5"
+                    android:padding="10dp"
+                    android:id="@+id/idTxtUnidadPedido"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"/>
+                <Button
+                    android:id="@+id/idBtnAddProductoPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_agregar"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:text="Agregar "
+                    android:paddingRight="7dp"
+                    android:paddingLeft="7dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+
+            <ListView
+                android:background="#fff"
+                android:id="@+id/idLvItemPedido"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:nestedScrollingEnabled="true"
+                android:layout_marginBottom="10dp">
+            </ListView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#f5f5f5"
+                android:layout_marginBottom="10dp"
+                android:gravity="right">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:padding="10dp"
+                    android:background="#dedebf"
+                    android:textColor="#000"
+                    android:textSize="17sp"/>
+                <EditText
+                    android:id="@+id/idTxtTotalPedido"
+                    android:background="#f5f5f5"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:editable="false"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/idBtnRegistrarPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:text="Confirmar Pedido"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

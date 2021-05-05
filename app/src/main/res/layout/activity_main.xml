@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".vista.LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="205dp"
+        android:layout_height="194dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/logoLogin"
+        app:srcCompat="@drawable/logo1" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="#11000000"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:hint="@string/txtPassword"
+        android:textColorHint="#414141"
+        android:textColor="#1b1b1b"
+        android:maxLines="1"
+        android:drawableStart="@drawable/ic_password"
+        android:layout_marginTop="50dp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtPassword"
+        android:layout_alignEnd="@id/txtPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/background_login"
+        android:text="@string/btnIngresar"
+
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

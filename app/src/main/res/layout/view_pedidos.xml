@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/idImgProducto"
+        android:layout_width="244dp"
+        android:layout_height="111dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/producto" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idPedProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Producto:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/idPedTamanio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tamaño:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/idPedUnidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unidades:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/idPedValorUnidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio Unitario:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/idPedSubTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SubTotal:"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
